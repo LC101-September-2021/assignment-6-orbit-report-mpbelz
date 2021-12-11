@@ -15,7 +15,7 @@ export class OrbitCountsComponent implements OnInit {
   ngOnInit() {
   }
 
-  countByType (typeName: string ): number {
+  typeCount(typeName: string ): number {
     let numArr = [];
     for (let i = 0; i < this.satellites.length; i++){
       if (this.satellites[i].type.toLowerCase() === typeName) {
@@ -24,4 +24,4 @@ export class OrbitCountsComponent implements OnInit {
       }
       return numArr.length;
     }
-  } 
+  }
