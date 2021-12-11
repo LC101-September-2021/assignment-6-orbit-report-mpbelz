@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { Satellite } from './satellite';
 
 @Component({
@@ -50,6 +50,4 @@ export class AppComponent {
 		// this will cause Angular to re-make the table, but now only containing matches
 		this.displayList = matchingSatellites;
 	}
-
-
 }
