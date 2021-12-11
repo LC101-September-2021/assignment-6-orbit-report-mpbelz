@@ -1,6 +1,5 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div *ngFor="let category of categories">{{category}}: <span>{{typeCount(category)}}</span></div>
    <div>Total: <span>{{satellites.length}}</span></div>
    <div>Space Debris: <span>{{countByType('space debris')}}</span></div>
    <div>Communication: <span>{{countByType('communication')}}</span></div>
